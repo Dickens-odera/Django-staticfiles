@@ -1,0 +1,28 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Django Web</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="{% static 'style/style.css' %}"/>
+    <script type="text/javascript" src="{% static 'js/app.js' %}"></script>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="sidebar">
+            <h4>HELLO DJANGO</h4>
+            <hr>
+            <img src="{% static 'media/images/admin.jpg' %}" alt="image" class="img-rounded">
+        </div>
+        <div class="main">
+            <h2>SIDEBAR</h2>
+            <hr>
+            <Button id="btn">Click Here</Button>
+        </div>
+    </div>
+    
+</body>
+</html>
